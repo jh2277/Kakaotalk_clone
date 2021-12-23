@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1>
+    <title>카카오톡 프로필화면 만들기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet"/>
+    <style>
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+        .container{
+            width: 480px;
+            height: 800px;
+            margin: 50px auto;
+            position: relative;
+            border: 1px solid lightgray;
+        }
+
+        .mytitle {
+            height: 500px;
+            background-image: url("https://t2.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/xahGXVwHnCHQlx7z4PyWOPFTyxw.JPG");
+            background-position: center;
+            background-size: cover;
+
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .myname{
+            padding-top: 10px;
+        }
+        .line {
+            margin-bottom : 10px;
+        }
+
+        .white-box{
+            height:300px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            padding: 0 100px;
+        }
+        .profile-message{
+            text-align: center;
+            color: white;
+        }
+        .image{
+            width: 300px;
+            font-size: 10pt;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+        }
+
+        .chat-icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .qutate-icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo1{
+            width: 100px;
+            height: 100px;
+            top:450px;
+            left:190px;
+            object-fit: cover;
+            border-radius: 50px;
+            position: absolute;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<!--<div class="mytitle">-->
+<!--    <h3>먼지를 싫어해 공기청정기는 기본에 매일 바닥 닦는 자취생입니다. 먼지잡는 기계가 나오면 좋겠어요. 코딩 찬찬히 배우고 있습니다 잘 하고 싶어요.</h3>-->
+<!--</div>-->
+
+<!--<div class="circle">-->
+<!--  <img src="https://t2.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/xahGXVwHnCHQlx7z4PyWOPFTyxw.JPG"-->
+<!--       class="rounded-circle" alt="Cinque Terre" width="150px" height="150px">-->
+<!--</div>-->
+
+<div class="container">
+    <div class="mytitle">
+        <div class="line">__________</div>
+        <div class="profile-message">
+            <p>먼지를 싫어해 공기청정기는 기본에 매일 바닥 닦는 자취생입니다.
+                먼지잡는 기계가 나오면 좋겠어요.
+                <br>코딩 찬찬히 배우고 있습니다.</p>
+        </div>
+    </div>
+    <img src="backgu.jpg"
+         class="photo1" alt="Cinque Terre" />
+    <div class = 'white-box'>
+        <div class = 'myname'>
+           <h3>주혁</h3>
+        </div>
+
+        <div class = "image">
+            <div class="chat-icon">
+                <img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa1e986b0-d5ab-4e8c-b328-3e3778f3077e%2F%E1%84%82%E1%85%A1%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B4_%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC.png?table=block&id=4a6c975c-1560-46fe-9b0e-ab9316f06cc1&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1520&userId=&cache=v2"
+                class="icon" alt="Cinque Terre" >
+                <h4>나와의 채팅</h4>
+            </div>
+            <div class="profile-icon">
+                <img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb5528682-60d4-423e-94c9-df051a14ff65%2F%E1%84%8F%E1%85%A1%E1%84%89%E1%85%B3.png?table=block&id=6497fccb-8352-448f-86b0-c61e8b26ff29&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1520&userId=&cache=v2"
+                class="icon" alt="Cinque Terre" >
+                <h4>프로필 관리</h4>
+            </div>
+            <div class="qutate-icon">
+                <img src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3f47f9b4-ddb6-4273-b844-89ce402ecdbe%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%91%E1%85%B5%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5.png?table=block&id=0846c90b-1d2e-452b-8a11-cc2b3740aa3f&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=240&userId=&cache=v2"
+                class="icon" alt="Cinque Terre">
+                <h4>카카오 스토리</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
